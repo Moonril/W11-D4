@@ -14,3 +14,14 @@ export const removeFromFavouriteAction = (companyName) => {
         payload: companyName,
     }
 }
+
+
+export const fetchJobsAction = () => {
+    return async (
+        dispatch
+    ) => {
+        try {
+            let resp = await fetch ('https://strive-benchmark.herokuapp.com/api/jobs?company=' +)
+        }
+    }
+}
